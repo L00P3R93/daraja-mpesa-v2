@@ -1,0 +1,32 @@
+{
+    "name": "sntaks/daraja",
+    "description": "A PHP library/Laravel Package for integrating with M-Pesa Daraja API",
+    "keywords": ["mpesa", "daraja", "payments", "php", "laravel", "sntaks"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Kioko",
+            "email": "vincentkioko51@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sntaks\\Daraja\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sntaks\\Daraja\\MpesaServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "version": "1.0.0"
+}
